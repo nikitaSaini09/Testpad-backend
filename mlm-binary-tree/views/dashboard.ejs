@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard - MLM</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome, <%= member.name %> (<%= member.member_code %>)</h1>
+    <p>Email: <%= member.email %> | Mobile: <%= member.mobile %></p>
+    <div class="counts">
+      <div>Left Count: <strong><%= member.left_count %></strong></div>
+      <div>Right Count: <strong><%= member.right_count %></strong></div>
+    </div>
+    <p>
+      <a href="/profile">Profile</a> |
+      <a href="/downline">View Downline</a> |
+      <a href="/join">Add Member</a> |
+      <a href="/logout">Logout</a>
+    </p>
+  </div>
+</body>
+</html>
